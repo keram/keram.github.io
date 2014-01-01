@@ -13,19 +13,19 @@ a:active { color: #f00; }
 a:hover { text-decoration: none; }
 
 #content {
-  width: 770px;
+  width: 760px;
   margin:0 auto;
   background: #fff url('bg.jpg') repeat-y top left;
 }
 
 #header { height:80px; text-align:right;margin-right:1px;}
+
+#main {
+  clear: both;
+}
 #footer { clear: both; }
 h1 a { display: block;}
-#main { width: 675px; float: left;}
-#sidebar { width: 95px; float: right;}
-#sidebar.fx img { top: 0px; position: fixed;}
-#main table { width: 675px;}
-table{border-collapse:collapse; margin-bottom: 2em;}
+table {border-collapse:collapse; margin-bottom: 2em;}
 th, td { vertical-align: top;padding: 5px 0;}
 th { width: 190px; padding-right: 10px;text-align:right; color: #666;}
 th a { text-decoration: none; }
@@ -34,9 +34,16 @@ caption { width: 190px;font-size: 1.25em; font-weight: bold;text-align:right; pa
 .big { font-size: 1.25em; }
 
 #menu { float:left; padding: 27px 0px 0px 20px; }
-#menu img { margin-right: 15px;}
 
 .notice { font-weight: normal;font-size: smaller; }
+
+#photo {
+  float: right;
+  width: 165px;
+  position: relative;
+  top: -1em;
+}
+
 </style>
 <style type="text/css" media="print">
 
@@ -45,13 +52,14 @@ caption { width: 190px;font-size: 1.25em; font-weight: bold;text-align:right; pa
   position: relative;
 }
 
-#header { height: 80px; text-align:right;margin-right:1px;}
-#sidebar, #menu { display: none;}
-#header { position: absolute; top: 4px; right: 95px;}
 table { margin-bottom: 1em; }
 
 a[href^="http"]:after {
   content: " - " attr(href) " ";
+}
+
+.no-print {
+  display: none;
 }
 
 </style>
@@ -59,12 +67,13 @@ a[href^="http"]:after {
 <body>
   <div id="content" >
     <div id="header">
-      <div id="menu">
+      <div id="menu" class="no-print">
         <a href="javascript:window.print();">Print</a>
       </div>
       <h1>Curriculum Vitae</h1>
     </div>
     <div id="main" class="vcard hresume">
+      <a href="mla_2013.jpg"><img src="mla_2013.jpg" id="photo" alt="Marek L. photo 2013"/></a>
       <h2><span class="given-name">Marek</span> <span class="family-name">Laboš</span></h2>
       <table class="big">
       <tr>
