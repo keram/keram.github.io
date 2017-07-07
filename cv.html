@@ -15,14 +15,15 @@ a:hover { text-decoration: none; }
 #content {
   width: 760px;
   margin:0 auto;
-  background: #fff url('bg.jpg') repeat-y top left;
+  background: #fff;
 }
 
-#header { height:80px; text-align:right;margin-right:1px;}
+#header { height: 60px; text-align:right;margin-right:1px;}
 
 #main {
   clear: both;
 }
+
 #footer { clear: both; }
 h1 a { display: block;}
 table {border-collapse:collapse; margin-bottom: 2em;}
@@ -52,14 +53,22 @@ caption { width: 190px;font-size: 1.25em; font-weight: bold;text-align:right; pa
   position: relative;
 }
 
-table { margin-bottom: 1em; }
+table { margin-bottom: 0.5em; }
 
 a[href^="http"]:after {
   content: " - " attr(href) " ";
 }
 
+a {
+  text-decoration: none;
+}
+
 .no-print {
   display: none;
+}
+
+#interests {
+  margin-bottom: 0
 }
 
 </style>
@@ -77,14 +86,14 @@ a[href^="http"]:after {
       <h2><span class="given-name">Marek</span> <span class="family-name">Laboš</span></h2>
       <table class="big">
       <tr>
-        <th>Born<sup>&nbsp;</sup></th>
-        <td class="bday"><strong>April 9<sup>th</sup> 1983</strong>, Trnava, Slovakia</td>
-      </tr>
-      <tr>
         <th>Contact</th>
         <td>E-mail: <a href="mailto://keraml@gmail.com"><strong class="email">nospam.keram@gmail.com</strong></a><br />
           Mobil: <span>+44 747 225 8321</span>
         </td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>34</td>
       </tr>
       </table>
       <table id="skills">
@@ -93,61 +102,71 @@ a[href^="http"]:after {
           <tr>
             <th>Operating systems</th>
             <td>
-              <strong>Windows XP</strong>, <strong>Vista</strong> - advanced user<br />
-              <strong>Linux</strong>,
-              <strong>OSX</strong> - advanced user (preferred OS)
+              <strong>Windows</strong> XP, Vista, 10,
+              <strong>Linux</strong> Ubuntu,
+              <strong>OSX</strong>
             </td>
           </tr>
           <tr>
             <th>Coding and Programming</th>
             <td>
-              <strong>Ruby</strong> (preferred language), <strong>Ruby on Rails</strong> - advanced,<br />
-              <strong>Sinatra, Administrate</strong> - familiar,<br />
-              <strong>HTML</strong>, <strong>CSS</strong> - advanced,<br />
-              <strong>Javascript</strong> - advanced,<br />
+              <strong>Ruby</strong> (preferred language)<br />
+              <strong>Javascript</strong>, <strong>HTML</strong>, <strong>CSS</strong> - advanced,<br />
               <strong>PHP</strong> - intermediate (experience with Zend Framework and Nette framework)<br />
-              <strong>Java</strong>, <strong>Lisp - Clojure</strong>, <strong>C</strong> - basics
+              <strong>Java</strong>, <strong>Python</strong>, <strong>Lisp - Clojure</strong>, <strong>C</strong> - basics
             </td>
           </tr>
           <tr>
-            <th>Database</th>
+            <th>Databases</th>
             <td>
-              <strong>MySQL</strong> - intermediate,<br />
-              <strong>PostgreSQL</strong> - basics,<br />
-              <strong>CouchDB</strong> - intermediate
+              <strong>MySQL</strong>, <strong>PostgreSQL</strong>,
+              <strong>CouchDB</strong>
             </td>
           </tr>
           <tr>
-            <th>CMS <br>web development experience</th>
+            <th>CMS</th>
             <td>
-              <a href="http://refinerycms.com/">RefineryCMS</a>,<br>
-              <a href="http://www.liferay.com/">Liferay</a>, <a href="http://www.etnetera.cz/en/15836-products/jnp.html">jNetPublish</a>,<br>
-              <a href="http://drupal.org/">Drupal 7</a>, <a href="http://wordpress.org/">WordPress</a>
-            </td>
-          </tr>
-          <tr>
-            <th>Security tools</th>
-            <td>
-              User of multiple programs and tools like: <br>
-              <strong>Nmap</strong>, <strong>BurpSuite</strong>, <strong>Metasploit</strong>, <strong>Nikto</strong>, <strong>Skipfish</strong>, <strong>SQLmap</strong> and others.
+              <a href="http://refinerycms.com/">RefineryCMS</a>,
+              <a href="http://www.liferay.com/">Liferay</a>, <a href="http://www.etnetera.cz/en/15836-products/jnp.html">jNetPublish</a>,
+              <a href="http://drupal.org/">Drupal 7</a>,
+              <a href="http://wordpress.org/">WordPress</a>
             </td>
           </tr>
           <tr>
             <th>Web Servers and Hostings</th>
             <td>
-              <strong>Apache</strong>, <strong>Nginx</strong> - intermediate<br/>
-              <strong>Heroku, EngineYard, AWS</strong> - familiar
+              <strong>Apache</strong>, <strong>Nginx</strong>,
+               <strong>Heroku</strong>, <strong>EngineYard</strong>, <strong>AWS</strong>
             </td>
           </tr>
           <tr>
             <th>Tools, frameworks and experience</th>
             <td>
-              <strong>Web Application Security</strong> - intermediate,<br/>
-              <strong>Usability and Accessibility</strong> - intermediate,<br/>
-              <strong>Grunt</strong>, <strong>Gulp</strong>, <strong>Google Closure</strong>, <strong>Padrino RB</strong> - familiar,<br/>
-              <strong>Foundation, Bootstrap, MUICss</strong> - familiar</br>
-              <strong>React</strong> - experimenting and using in production</br>
-              Experience with a third party API. (leafletjs, facebook, twitter, google maps etc.)
+              <strong>Ruby on Rails</strong> - advanced<br />
+              <strong>Nmap</strong>,
+              <strong>BurpSuite</strong>,
+              <strong>Metasploit</strong>,
+              <strong>Nikto</strong>,
+              <strong>SQLmap</strong>,
+              <strong>Skipfish</strong>,
+              <strong>Usability and Accessibility</strong>,<br/>
+              <strong>Sinatra</strong>,
+              <strong>Administrate</strong>,
+              <strong>Padrino RB</strong>, <br/>
+              <strong>React</strong>, <strong>Google Closure</strong>,
+              <strong>ES6</strong>, <strong>RxJS</strong>,
+              <br/>
+              <strong>Foundation</strong>,
+              <strong>Bootstrap</strong>,
+              <strong>MUICss</strong>,<br/>
+              <strong>Grunt</strong>,
+              <strong>Gulp</strong>, <strong>Node.js</strong>,
+
+              <strong>OpenCV</strong>, <strong>functional programming</strong>
+               - familiar</br>
+
+              Experience with a various third party API and libraries such as leafletjs,
+              d3js, twitter, google maps etc.)
             </td>
           </tr>
         </tbody>
@@ -215,47 +234,31 @@ a[href^="http"]:after {
         <caption>Training, workshops and conferences</caption>
         <tbody>
           <tr>
-            <th>November 2016</th>
+            <th>2016</th>
             <td>ReactiveConf 2016</td>
           </tr>
           <tr>
-            <th>November 2015</th>
-            <td>React conference Bratislava</td>
+            <th>2015</th>
+            <td>ReactiveConf 2015, Bath Ruby Conference,
+                Chaos Communication Camp</td>
           </tr>
           <tr>
-            <th>March 2015</th>
-            <td>Bath Ruby Conference</td>
-          </tr>
-          <tr>
-            <th>August 2015</th>
-            <td>Chaos Communication Camp</td>
-          </tr>
-          <tr>
-            <th>October 2014</th>
+            <th>2014</th>
             <td>All Your Base Conference</td>
           </tr>
           <tr>
-            <th>December 2012</th>
-            <td>Workshop by Igor Minar on AngularJS</td>
+            <th>2012</th>
+            <td>Workshop by Igor Minar on AngularJS,
+            Hacktivity - IT Security Conference in Budapest,
+            Confidence - IT Security Conference in Krakow,
+            Security Session Conference in Brno</td>
           </tr>
           <tr>
-            <th>October 2012</th>
-            <td>Hacktivity - IT Security Conference in Budapest</td>
-          </tr>
-          <tr>
-            <th>May 2012</th>
-            <td>Confidence - IT Security Conference in Krakow</td>
-          </tr>
-          <tr>
-            <th>February 2012</th>
-            <td>Conference Security Session 2012 in Brno</td>
-          </tr>
-          <tr>
-            <th>August 2009</th>
+            <th>2009</th>
             <td>Hacking at Random (HAR) - outdoor hacker conference in Netherlands</td>
           </tr>
           <tr>
-            <th>March 2007</th>
+            <th>2007</th>
             <td>Training - workshop: User testing and development of usable Web (H1.cz)</td>
           </tr>
         </tbody>
@@ -265,25 +268,31 @@ a[href^="http"]:after {
         <caption>Public activity</caption>
         <tbody>
           <tr>
-            <th>November 2013</th>
+              <th>
+                  2014
+              </th>
+              <td>
+                  Presentation about "blackhat" technics in User Experience Web Design
+                  (<a href="https://drive.google.com/file/d/0B4G8MhMB0Bt_cE5hTmZWRkl1ZE0/edit">Slides</a>)
+              </td>
+          </tr>
+          <tr>
+            <th>2013</th>
             <td>Mentor at <a href="http://railsgirls.com/zilina">Rails Girls Žilina</a>
             </td>
           </tr>
           <tr>
-            <th>August 2012</th>
+            <th>2012</th>
             <td>
               Mini workshop about development and contributions to <a href="http://progressbar.sk/">Progressbar Hackerspace website</a>.
               (<a href="https://docs.google.com/presentation/d/1__J8ltMG9SWS5Bk0bfaVNqQMbGxo1VZ0JPI5x90wdFg/edit?usp=sharing">Slides</a>)
-            </td>
-          </tr><tr>
-            <th>April 2012</th>
-            <td>
+                <br>
               Presentation at <a href="https://www.facebook.com/groups/rubyslava/">Rubyslava</a> about Ruby on Rails web CMS RefineryCMS.
-              
+
             </td>
           </tr>
           <tr>
-            <th>September 2010</th>
+            <th>2010</th>
             <td>
               Presentation at <a href="http://railsgirls.com/zilina">BarCamp Žilina</a> about work in the Technical Museum.
               (<a href="https://docs.google.com/presentation/d/1Adrfu26IMbipxdwPP89Y58US4YwRk094cnzjTKBN780/edit?usp=sharing">Slides in Slovak language</a>)
@@ -291,16 +300,15 @@ a[href^="http"]:after {
           </tr>
         </tbody>
       </table>
-      <table>
+      <table id="languages">
         <caption>Languages</caption>
         <tbody>
           <tr>
             <th></th>
             <td>
-              <strong>English</strong> - intermediate (2 years living in the UK), <br>
+              <strong>English</strong> - intermediate (4 years living in the UK), <br>
               <strong>Czech</strong> - passive (7.5 years lived in the Czech Republic), <br>
-              <strong>Slovak</strong> - native language, <br>
-              <strong>Deutch</strong> - basics
+              <strong>Slovak</strong> - native language
             </td>
           </tr>
         </tbody>
@@ -309,39 +317,23 @@ a[href^="http"]:after {
         <caption>Interests</caption>
         <tbody>
           <tr>
-            <th>Sports</th>
+            <th></th>
             <td>
-              <strong>Frisbee</strong> - Ultimate - Freestyle - Discgolf, Bike, Chess
-            </td>
-          </tr>
-          <tr>
-            <th>Technologies &amp; Science</th>
-            <td>
-              Security, (functional) programming, mathematics &amp; physics<br>
-            </td>
-          </tr>
-          <tr>
-            <th>Arts</th>
-            <td>
-              Books, Photography, Music, Concerts, Web Design and Usability
-            </td>
-          </tr>
-          <tr>
-            <th>Others</th>
-            <td>
-              Code Reviews, Hackathons, Programming and UX meetups<br>
-              Supporting Slovak hackerspace <a href="https://progressbar.sk/">Progressbar</a><br>
-              Supporting Czech-Slovak <a href="http://refinery.sk/">Refinery community</a> (<a href="http://refinery.sk/blog">Blog</a>)<br>
+              Frisbee Ultimate, Bike, Chess, Go (Baduk), Aikido
+                <br>
+              Books, Photography, Music, Hackathons
+              <br>
+              Supporting Slovak hackerspace <a href="https://www.progressbar.sk/">Progressbar</a>
             </td>
           </tr>
           <tr>
             <th>Social networks &amp; links</th>
             <td>
-              <a href="http://www.meetup.com/members/133791402/" target="_blank">meetups</a>,<br>
-              <a href="http://github.com/keram" target="_blank">github</a>,<br>
-              <a href="http://twitter.com/k3r4m" target="_blank">twitter</a>,<br>
-              <a href="http://www.flickr.com/photos/k3r4m/" target="_blank">flickr (photos)</a>,<br>
-              <a href="http://last.fm/user/keraml" target="_blank">last.fm (music)</a>
+              <a href="http://www.meetup.com/members/133791402/" target="_blank">meetups</a>,
+              <a href="http://github.com/keram" target="_blank">github</a>,
+              <a href="http://twitter.com/marek_public" target="_blank">twitter</a>,
+              <a href="http://www.flickr.com/photos/k3r4m/" target="_blank">flickr</a>,
+              <a href="http://last.fm/user/keraml" target="_blank">last.fm</a>
             </td>
           </tr>
         </tbody>
